@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Constant</id>
+    <version>1.0.0.0</version>
+    <title>Constant</title>
+    <authors>Aleksander Spro</authors>
+    <owners>Aleksander Spro</owners>
+    <licenseUrl>https://github.com/projecteon/Constant/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/projecteon/Constant</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Component to help create smart enums / static value objects in business logic.</description>
+    <releaseNotes>See project url and the changelog for release notes</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <language />
+    <tags>enum smartenum pcl</tags>
+  </metadata>
+</package>

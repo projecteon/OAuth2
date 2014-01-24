@@ -1,0 +1,1 @@
+D:\Development\GitHub\OAuth2\OAuth2\OAuth2.WindowsPhone\nuget.exe Pack OAuth2.WindowsPhone.csproj -IncludeReferencedProjects -OutputDirectory D:\Development\NuGetRepository -Prop Configuration=Release 

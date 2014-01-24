@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/projecteon/OAuth2/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/projecteon/OAuth2</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>See project url and the changelog for release notes</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>oauth oauth2 pcl</tags>
+  </metadata>
+</package>
+

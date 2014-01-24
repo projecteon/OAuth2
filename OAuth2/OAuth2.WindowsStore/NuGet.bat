@@ -1,0 +1,1 @@
+D:\Development\GitHub\OAuth2\OAuth2\OAuth2.WindowsStore\nuget.exe Pack OAuth2.WindowsStore.csproj -IncludeReferencedProjects -OutputDirectory D:\Development\NuGetRepository -Prop Configuration=Release 

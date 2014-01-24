@@ -1,0 +1,1 @@
+D:\Development\GitHub\OAuth2\OAuth2\OAuth2.Common\nuget.exe Pack OAuth2.Common.csproj -OutputDirectory D:\Development\NuGetRepository -Prop Configuration=Release 

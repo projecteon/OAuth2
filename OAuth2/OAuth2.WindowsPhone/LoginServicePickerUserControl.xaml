@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="OAuth2.WindowsPhone.LoginServicePickerUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:windowsPhone="clr-namespace:OAuth2.WindowsPhone"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+    <UserControl.Resources>
+        <windowsPhone:LoginServicePickerViewModel x:Key="LoginLoginServiceChooserViewModel" />
+        <windowsPhone:VisibilityConverter x:Key="VisibilityConverter" />
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}" DataContext="{StaticResource LoginLoginServiceChooserViewModel}">
+        <StackPanel Background="{StaticResource PhoneChromeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Google" HorizontalAlignment="Center"  VerticalAlignment="Center" Visibility="{Binding ShowLoginServiceButtons, Converter={StaticResource VisibilityConverter}}" Command="{Binding GoogleLoginCommand}" Width="230" Height="90" />
+            <Button Content="Facebook" HorizontalAlignment="Center"  VerticalAlignment="Center"  Visibility="{Binding ShowLoginServiceButtons, Converter={StaticResource VisibilityConverter}}" Command="{Binding FacebookLoginCommand}" Width="230" Height="90"/>
+            <Button Content="Windows Live" HorizontalAlignment="Center"  VerticalAlignment="Center" Visibility="{Binding ShowLoginServiceButtons, Converter={StaticResource VisibilityConverter}}" Command="{Binding LiveLoginCommand}" Width="230" Height="90"/>
+            <windowsPhone:GoogleLoginServiceUserControl Visibility="{Binding ShowGoogleLogin, Converter={StaticResource VisibilityConverter}}"></windowsPhone:GoogleLoginServiceUserControl>
+            <Button Content="Cancel" Visibility="{Binding ShowCancel, Converter={StaticResource VisibilityConverter}}" Command="{Binding CancelCommand}"></Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
